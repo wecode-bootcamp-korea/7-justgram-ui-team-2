@@ -1,0 +1,180 @@
+header {
+  border-bottom: 1px solid rgba(219, 219, 219);
+  padding: 10px;
+}
+
+#logo {
+  margin-left: 150px;
+  padding-right: 20px;
+  border-right: solid black;
+  top: 50%;
+}
+
+#justgram {
+  position: absolute;
+  font-family: "Lobster", cursive;
+  padding-left: 25px;
+  padding-top: 0px;
+  margin: auto;
+  left: 220px;
+  top: 2.5%;
+}
+
+#searchBox {
+  position: absolute;
+  left: 650px;
+  top: 2.5%;
+  background-color: #fafafa;
+  border: 1px solid rgba(219, 219, 219);
+}
+
+#searchBox input .placeholder {
+  text-align: center;
+}
+
+#explore {
+  position: absolute;
+  left: 1200px;
+  top: 2.5%;
+  width: 30px;
+}
+
+#headerHeart {
+  position: absolute;
+  left: 1250px;
+  top: 2.5%;
+  width: 30px;
+}
+
+#my {
+  position: absolute;
+  left: 1300px;
+  top: 2.5%;
+  width: 30px;
+}
+
+#feed {
+  border: 1px solid rgba(219, 219, 219);
+  width: 400px;
+  height: 630px;
+  top: 50%;
+  left: 50%;
+  transform: translate(40%, 10%);
+}
+
+#feedHeader {
+  height: 50px;
+}
+
+#accountImg {
+  position: absolute;
+  width: 30px;
+  border-radius: 70%;
+  top: 10px;
+  left: 5px;
+}
+
+#accountName {
+  position: absolute;
+  width: 50px;
+  padding-left: 10px;
+  top: 10px;
+  left: 30px;
+}
+
+#menu {
+  position: absolute;
+  width: 20px;
+  float: right;
+  top: 15px;
+  left: 370px;
+}
+
+#feedImg {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+}
+
+#menuBar {
+  border-bottom: 1px solid rgba(219, 219, 219);
+}
+
+#menuBarHeart {
+  position: absolute;
+  width: 20px;
+  padding: 5px 8px;
+  top: 450px;
+  left: 0px;
+}
+
+#chat {
+  position: absolute;
+  width: 20px;
+  padding: 5px 8px;
+  top: 450px;
+  left: 30px;
+}
+
+#chuploadat {
+  position: absolute;
+  width: 20px;
+  padding: 5px 8px;
+  top: 450px;
+  left: 65px;
+}
+
+#bookmark {
+  position: absolute;
+  width: 20px;
+  padding: 5px 8px;
+  top: 450px;
+  left: 360px;
+}
+
+#likeImg {
+  position: absolute;
+  width: 30px;
+  border-radius: 70%;
+  top: 480px;
+  left: 3px;
+}
+
+#likeNum {
+  position: absolute;
+  top: 480px;
+  left: 40px;
+}
+
+#content {
+  position: absolute;
+  top: 520px;
+  left: 5px;
+}
+
+#time {
+  position: absolute;
+  top: 550px;
+  left: 5px;
+  color: grey;
+}
+
+#commentForm {
+  border-top: 1px solid rgba(219, 219, 219);
+}
+
+#comment {
+  position: absolute;
+  border: none;
+  top: 600px;
+  left: 5px;
+}
+
+#commentBtn {
+  position: absolute;
+  border: none;
+  top: 600px;
+  left: 350px;
+  background-color: white;
+  color: #b2dffc;
+}
