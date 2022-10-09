@@ -1,67 +1,72 @@
-body {
-  position: relative;
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#out {
-  width: 351px;
-  height: 395px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 30%);
-  text-align: center;
-  position: absolute;
+.login-wrapper {
+  min-height: 60vh;
+}
+
+.login-component {
   background-color: #ffffff;
   border: 1px solid rgba(219, 219, 219);
-  margin: 0px 0px 10px;
-  padding: 10px 0px;
+  width: 350px;
+  height: 395px;
+  margin-top: 10%;
 }
 
-#logo {
-  text-align: center;
+.justgram-logo {
   margin-top: 36px;
   margin-bottom: 12px;
-  font-size: 20px;
+  font-size: 50px;
   font-family: "Lobster", cursive;
 }
 
-#loginForm {
-  margin: 24px 0px 0px;
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin: 40px;
 }
 
-#id_input {
-  border-radius: 5px;
+.login-input {
+  border-radius: 3px;
   border: 1px solid rgba(219, 219, 219);
   background-color: #fafafa;
+  width: 258px;
+  padding: 8px;
+  font-size: 12px;
 }
 
-#passwd_input {
-  border-radius: 5px;
-  border: 1px solid rgba(219, 219, 219);
-  background-color: #fafafa;
+.login-btn-wrapper {
   margin-top: 8px;
-  margin-bottom: 12px;
+  padding: 4px;
 }
 
-input {
-  width: 268px;
-  height: 38px;
-}
-
-.loginForm_btn {
-  margin-bottom: 100px;
-}
-
-#login_btn {
+#login-btn {
+  width: 276px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
   background-color: #b2dffc;
   color: white;
-  border-radius: 5px;
-  border: none;
-  margin-top: 8px 12px;
+  cursor: not-allowed;
+}
+
+.find-passwd {
+  margin: 12px 0px 0px;
 }
 
 a {
   text-decoration: none;
-  font-size: 13px;
+  font-size: 12px;
+  font-weight: bold;
   color: #00376b;
-  margin: 12px 0px 0px;
+  margin-top: 15%;
 }

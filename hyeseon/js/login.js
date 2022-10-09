@@ -1,16 +1,16 @@
-const id = document.getElementById("id_input"); //아이디 입력창
-const pw = document.getElementById("passwd_input"); //비밀번호 입력창
-const btn = document.getElementById("login_btn"); //로그인 버튼
+const email = document.getElementById("login-email-input"); //아이디 입력창
+const pw = document.getElementById("login-passwd-input"); //비밀번호 입력창
+const loginBtn = document.getElementById("login-btn"); //로그인 버튼
 
 function disabled() {
-  if (id.value && pw.value) {
-    btn.disabled = false;
-    btn.style.backgroundColor = "#0095f6";
-    btn.style.cursor = "pointer";
+  if (email.value && pw.value) {
+    loginBtn.disabled = false;
+    loginBtn.style.backgroundColor = "#0095f6";
+    loginBtn.style.cursor = "pointer";
   } else {
-    btn.disabled = true;
+    loginBtn.disabled = true;
   }
 }
 
-id.addEventListener("keyup", disabled);
+email.addEventListener("keyup", disabled);
 pw.addEventListener("keyup", disabled);

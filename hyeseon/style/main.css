@@ -1,180 +1,204 @@
-header {
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px 0;
   border-bottom: 1px solid rgba(219, 219, 219);
-  padding: 10px;
 }
 
-#logo {
-  margin-left: 150px;
-  padding-right: 20px;
-  border-right: solid black;
-  top: 50%;
+.logo-wrapper {
+  display: flex;
 }
 
-#justgram {
-  position: absolute;
+.logo-img {
+  width: 30px;
+}
+
+.logo-line {
+  border: 1px solid black;
+  margin: 0 20px;
+}
+
+.logo-text {
   font-family: "Lobster", cursive;
-  padding-left: 25px;
-  padding-top: 0px;
-  margin: auto;
-  left: 220px;
-  top: 2.5%;
+  font-size: 24px;
+  line-height: 26px;
 }
 
-#searchBox {
-  position: absolute;
-  left: 650px;
-  top: 2.5%;
-  background-color: #fafafa;
-  border: 1px solid rgba(219, 219, 219);
+.search-box {
+  width: 200px;
+  padding: 4px;
+  font-size: 16px;
 }
 
-#searchBox input .placeholder {
+.search-box::placeholder {
   text-align: center;
 }
 
-#explore {
-  position: absolute;
-  left: 1200px;
-  top: 2.5%;
+.menu-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-icon {
   width: 30px;
 }
 
-#headerHeart {
-  position: absolute;
-  left: 1250px;
-  top: 2.5%;
-  width: 30px;
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  background-color: #fafafa;
 }
 
-#my {
-  position: absolute;
-  left: 1300px;
-  top: 2.5%;
-  width: 30px;
+.feed-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
 }
 
-#feed {
+.feed-card {
+  width: 700px;
   border: 1px solid rgba(219, 219, 219);
-  width: 400px;
-  height: 630px;
-  top: 50%;
-  left: 50%;
-  transform: translate(40%, 10%);
+  background-color: white;
+  margin-left: 28%;
 }
 
-#feedHeader {
-  height: 50px;
+.feed-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
 }
 
-#accountImg {
-  position: absolute;
+.feed-header-left {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.feed-header-account-img {
+  border-radius: 60%;
   width: 30px;
-  border-radius: 70%;
-  top: 10px;
-  left: 5px;
 }
 
-#accountName {
-  position: absolute;
-  width: 50px;
-  padding-left: 10px;
-  top: 10px;
-  left: 30px;
+.feed-header-right {
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
-#menu {
-  position: absolute;
-  width: 20px;
-  float: right;
-  top: 15px;
-  left: 370px;
+.feed-header-menubar {
+  width: 30px;
 }
 
-#feedImg {
-  position: absolute;
-  width: 400px;
-  height: 400px;
-}
-
-#menuBar {
+.feed-img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border-top: 1px solid rgba(219, 219, 219);
   border-bottom: 1px solid rgba(219, 219, 219);
 }
 
-#menuBarHeart {
-  position: absolute;
-  width: 20px;
-  padding: 5px 8px;
-  top: 450px;
-  left: 0px;
+.feed-img {
+  max-width: 100%;
+  max-height: 100%;
+  background-size: contain;
 }
 
-#chat {
-  position: absolute;
-  width: 20px;
-  padding: 5px 8px;
-  top: 450px;
-  left: 30px;
+.feed-menubar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  padding-bottom: 0px;
 }
 
-#chuploadat {
-  position: absolute;
-  width: 20px;
-  padding: 5px 8px;
-  top: 450px;
-  left: 65px;
+.feed-menubar-left {
+  display: flex;
+  gap: 50px;
 }
 
-#bookmark {
-  position: absolute;
-  width: 20px;
-  padding: 5px 8px;
-  top: 450px;
-  left: 360px;
+.feed-menubar-right {
+  margin-right: 30px;
 }
 
-#likeImg {
-  position: absolute;
+.menubar-icon {
   width: 30px;
-  border-radius: 70%;
-  top: 480px;
-  left: 3px;
+  position: absolute;
+  margin-top: 0px;
 }
 
-#likeNum {
-  position: absolute;
-  top: 480px;
-  left: 40px;
+.feed-menu-like {
+  display: inline;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 12px;
+  padding-bottom: 0;
 }
 
-#content {
-  position: absolute;
-  top: 520px;
-  left: 5px;
+.feed-like-wrapper {
+  margin-top: 40px;
+  margin-left: 15px;
 }
 
-#time {
-  position: absolute;
-  top: 550px;
-  left: 5px;
+.feed-like-account-img {
+  border-radius: 60%;
+  width: 30px;
+}
+
+.like-num {
+  display: inline;
+  display: flex;
+  margin-top: -30px;
+  margin-left: 40px;
+}
+
+.feed-comment-list {
+  padding: 12px;
+}
+
+.feed-comment-card {
+  display: flex;
+  gap: 8px;
+  line-height: 24px;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+.time {
   color: grey;
+  margin-top: 30px;
+  margin-left: -160px;
 }
 
-#commentForm {
+.feed-comment-input-wrapper {
+  display: flex;
   border-top: 1px solid rgba(219, 219, 219);
 }
 
-#comment {
-  position: absolute;
+.feed-comment-input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
   border: none;
-  top: 600px;
-  left: 5px;
 }
 
-#commentBtn {
-  position: absolute;
+.feed-comment-input-button {
   border: none;
-  top: 600px;
-  left: 350px;
   background-color: white;
-  color: #b2dffc;
+  cursor: pointer;
+  color: #c4e1fb;
 }
