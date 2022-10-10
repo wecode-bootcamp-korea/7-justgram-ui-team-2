@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-wrapper {
+  min-height: 60vh;
+}
+
+.login-component {
+  background-color: #ffffff;
+  border: 1px solid rgba(219, 219, 219);
+  width: 350px;
+  height: 395px;
+  margin-top: 10%;
+}
+
+.justgram-logo {
+  margin-top: 36px;
+  margin-bottom: 12px;
+  font-size: 50px;
+  font-family: "Lobster", cursive;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin: 40px;
+}
+
+.login-input {
+  border-radius: 3px;
+  border: 1px solid rgba(219, 219, 219);
+  background-color: #fafafa;
+  width: 258px;
+  padding: 8px;
+  font-size: 12px;
+}
+
+.login-btn-wrapper {
+  margin-top: 8px;
+  padding: 4px;
+}
+
+#login-btn {
+  width: 276px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #b2dffc;
+  color: white;
+  cursor: not-allowed;
+}
+
+.find-passwd {
+  margin: 12px 0px 0px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  color: #00376b;
+  margin-top: 15%;
+}
