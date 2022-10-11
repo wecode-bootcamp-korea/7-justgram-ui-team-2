@@ -36,11 +36,11 @@ function updateCommentListDom(value, commentList, writer){
 };
 
 function getCommentList() {
-  fetch('../data/comments.json')
+  fetch("http://127.0.0.1:8081/data/comments.json")
     .then((res) => res.json())
-    .then((json) => {
-      console.log(json);
-      json.forEach((comment) => {
+    .then((pop) => {
+      console.log(pop);
+      pop.forEach((comment) => {
         const commentList = document.getElementsByClassName("feed-comment-list")[0];
         updateCommentListDom(comment.content, commentList, comment.nickname)
       });
