@@ -1,0 +1,22 @@
+[
+  {
+    "writer": "nick_name1",
+    "content": "댓글1",
+    "feedIndex": 0
+  },
+  {
+    "writer": "nick_name2",
+    "content": "댓글2",
+    "feedIndex": 1
+  },
+  {
+    "writer": "nick_name3",
+    "content": "댓글3",
+    "feedIndex": 1
+  },
+  {
+    "writer": "nick_name4",
+    "content": "댓글4",
+    "feedIndex": 2
+  }
+]
